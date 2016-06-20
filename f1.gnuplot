@@ -6,6 +6,8 @@ set logscale y
 set timefmt '%Y-%m-%d %H:%M:%S'
 set xdata time
 set datafile sep ' '
+set format x "%b %d, %H:%M"
+#set xtics rotate
 
 plot \
     input_file using 1:3 with lines title 'top 1' linewidth 3, \
